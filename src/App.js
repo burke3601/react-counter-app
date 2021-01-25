@@ -27,12 +27,12 @@ function App(props) {
    return (
      <>
     <Router>
-      <div>
-              <button onClick={_toggleIsLoggedIn}>
+      <div className="container">
+              <button className="button" onClick={_toggleIsLoggedIn}>
                   { isLoggedIn ? 'logout' : 'login' }
               </button>
               <br />
-              <nav>
+              <nav className="navbar">
                   <Link to='/'>Home</Link>
                   { isLoggedIn && <Link to='/blog'>Blog</Link> }
                   <Link to='/about'>About</Link>
