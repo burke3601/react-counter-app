@@ -1,11 +1,11 @@
 
 import './App.css';
 import { useState } from 'react';
-import Blog from './Blog'
-import About from './About'
+
 import Home from './Home'
-import Counter from './Counter'
-import Protected from './Protected'
+import Joke from './Joke'
+
+import Bracket from './Bracket'
 
 import { 
   BrowserRouter as Router,
@@ -18,9 +18,9 @@ import {
 
 
 function App(props) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const _toggleIsLoggedIn = () => setIsLoggedIn(!isLoggedIn);
+  // const _toggleIsLoggedIn = () => setIsLoggedIn(!isLoggedIn);
 
  
    
@@ -28,31 +28,29 @@ function App(props) {
      <>
     <Router>
       <div className="container">
-              <button className="button" onClick={_toggleIsLoggedIn}>
-                  { isLoggedIn ? 'logout' : 'login' }
-              </button>
+              
               <br />
               <nav className="navbar">
                   <Link to='/'>Home</Link>
-                  { isLoggedIn && <Link to='/blog'>Blog</Link> }
-                  <Link to='/about'>About</Link>
-                  <Link to ='/counter'>Counter</Link>
+                  <Link to='/joke'>Joke</Link>
+                  
+                 
+                 
+                  <Link to='/bracket'>Bracket</Link>
               </nav>
           </div>
       <Switch>
         <Route exact path="/">
             <Home />
         </Route>
-        <Route path="/blog">
-            <Protected isLoggedIn={isLoggedIn}>
-              <Blog />
-            </Protected>  
+        <Route path="/joke">
+            <Joke />
         </Route>
-        <Route path="/about">
-            <About />
-        </Route>
-        <Route path="/counter">
-            <Counter />
+       
+      
+        
+        <Route path="/bracket">
+            <Bracket />
         </Route>
         <Route path="*">
         <Route path="*">

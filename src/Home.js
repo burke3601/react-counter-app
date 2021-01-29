@@ -2,9 +2,9 @@ import React from 'react';
    function Home (){ 
        return(
     <>
-        <h1>About Our Company</h1>
+        <h1>Dad Joke Bracket</h1>
         <p>
-            We are awesome.
+            Which dad joke will prevail?
         </p>
     </>
        )
