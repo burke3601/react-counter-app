@@ -1,9 +1,9 @@
 
 import './App.css';
-import { useState } from 'react';
+
 
 import Home from './Home'
-import Joke from './Joke'
+
 
 import Bracket from './Bracket'
 
@@ -12,8 +12,8 @@ import {
   Switch,
   Route,
   Link,
-  Redirect,
-  useHistory
+  Redirect
+  
 } from 'react-router-dom'
 
 
@@ -21,9 +21,6 @@ function App(props) {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // const _toggleIsLoggedIn = () => setIsLoggedIn(!isLoggedIn);
-
- 
-   
    return (
      <>
     <Router>
@@ -32,7 +29,7 @@ function App(props) {
               <br />
               <nav className="navbar">
                   <Link to='/'>Home</Link>
-                  <Link to='/joke'>Joke</Link>
+                  
                   
                  
                  
@@ -43,9 +40,7 @@ function App(props) {
         <Route exact path="/">
             <Home />
         </Route>
-        <Route path="/joke">
-            <Joke />
-        </Route>
+       
        
       
         

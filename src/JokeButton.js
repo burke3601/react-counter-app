@@ -5,8 +5,9 @@ function JokeButton(props) {
         <nav>
             <button 
                 onClick={props.handleClick}
+                
             >
-                Generate Jokes
+                Get Jokes!
             </button>
         </nav>
     )

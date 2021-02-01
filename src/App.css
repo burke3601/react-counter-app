@@ -2,6 +2,7 @@
   display: flexbox;
   flex-direction: column;
   justify-content: left;
+  border-style: solid;
   
 }
 
@@ -21,6 +22,7 @@ HTML CSS Result Skip Results Iframe
 main{
   display:flex;
   flex-direction:row;
+  border-style: solid;
 }
 .round{
   display:flex;
@@ -46,6 +48,7 @@ body{
   font-size:small;
   padding:10px;
   line-height:1.4em;
+  border: solid;
 }
 
 li.game{

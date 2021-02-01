@@ -1,17 +1,17 @@
 import React from 'react';
 
-function WinnerButton(props) {
+function WinnerButtonTwo(props) {
     return(
         <nav>
             <button id={props.joke}
-                 onClick={props.winClick}
-                
+                 
+                 onClick={props.winClickTwo}
                  
             >
-                Advance
+                Winner Button
             </button>
         </nav>
     )
 }
 
-export default WinnerButton;
+export default WinnerButtonTwo;
