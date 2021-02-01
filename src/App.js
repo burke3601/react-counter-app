@@ -2,10 +2,10 @@
 import './App.css';
 
 
-import Home from './Home'
+import Home from './components/Home'
 
 
-import Bracket from './Bracket'
+import Bracket from './components/Bracket'
 
 import { 
   BrowserRouter as Router,
@@ -39,12 +39,14 @@ function App(props) {
       <Switch>
         <Route exact path="/">
             <Home />
+            <Link to='/bracket'>Go To Bracket!</Link>
         </Route>
        
        
       
         
         <Route path="/bracket">
+        
             <Bracket />
         </Route>
         <Route path="*">

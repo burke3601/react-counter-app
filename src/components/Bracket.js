@@ -56,11 +56,6 @@ import WinnerButton from './WinnerButton';
             setJokeArrayFour(finalArray)
            
         }
-
-        
-
-        
-        
         return(
             <>
     <h1>Dad Joke Bracket</h1>
@@ -167,8 +162,9 @@ import WinnerButton from './WinnerButton';
                                     />}
                             </span></li>
                             <li className="game game-spacer">&nbsp;</li>
-                            <li className="game game-bottom ">{jokeArray.length ? jokeArray[7].joke : ''} <span> 
-                                    {jokeArray.length ? (
+                            <li className="game game-bottom ">{jokeArray.length ? jokeArray[7].joke : ''} 
+                            <span> 
+                                    {jokeArray.length && 
                                     <WinnerButton 
                                         joke={jokeArray[7].joke} 
                                         winClick ={(e) => {
@@ -176,7 +172,7 @@ import WinnerButton from './WinnerButton';
                                             addToFinalFour(joke, 3)
 
                                         }}
-                                    /> ) : '' }
+                                    />  }
                             </span></li>
 
                             <li className="spacer">&nbsp;</li>
@@ -186,22 +182,22 @@ import WinnerButton from './WinnerButton';
                         <ul className="round round-3">
                             <li className="spacer">&nbsp;</li>
                             
-                            <li className="game game-top"> {jokeArrayTwo.length ? (
+                            <li className="game game-top"> {jokeArrayTwo.length ? jokeArrayTwo[0] : 'fill in'} 
                                 <span>
-                                    {jokeArrayTwo[0]}
+                                    {jokeArrayTwo.length &&
                                     <WinnerButton 
                                         joke={jokeArrayTwo[0]} 
                                         winClick ={(e) => {
                                             const joke = e.target.id
                                            addToFinalTwo(joke, 0)
-                                            console.log('winner button final 4 joke[0] did it work?')
+                                            
                                             
                                         }}
-                                    />
+                                    /> }
                                 </span>
                             
-                            )
-                             : 'joke winner game 1 filler' } <span></span></li>
+                            
+                              </li>
                             <li className="game game-spacer">&nbsp;</li>
                             <li className="game game-bottom "> {jokeArrayTwo.length ? (
                                 <span>
