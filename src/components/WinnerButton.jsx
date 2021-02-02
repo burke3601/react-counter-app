@@ -3,7 +3,8 @@ import React from 'react';
 function WinnerButton(props) {
     return(
         <nav>
-            <button id={props.joke}
+            <button className="winbutton"
+                id={props.joke}
                  onClick={props.winClick}
                 
                  

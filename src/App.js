@@ -1,11 +1,8 @@
 
 import './App.css';
-
-
 import Home from './components/Home'
-
-
 import Bracket from './components/Bracket'
+import About from './components/About'
 
 import { 
   BrowserRouter as Router,
@@ -18,9 +15,7 @@ import {
 
 
 function App(props) {
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // const _toggleIsLoggedIn = () => setIsLoggedIn(!isLoggedIn);
    return (
      <>
     <Router>
@@ -28,26 +23,27 @@ function App(props) {
               
               <br />
               <nav className="navbar">
-                  <Link to='/'>Home</Link>
+               <ul className="navlist" >
+                  <li className="linav"><Link to='/'>Home</Link></li>
                   
-                  
-                 
-                 
-                  <Link to='/bracket'>Bracket</Link>
+                  <li className="linav"><Link to='/bracket'>Bracket</Link></li>
+                  <li className="linav"><Link to='/about'>About</Link></li>
+                </ul>
               </nav>
           </div>
       <Switch>
         <Route exact path="/">
+          
             <Home />
-            <Link to='/bracket'>Go To Bracket!</Link>
+            
         </Route>
-       
-       
-      
-        
         <Route path="/bracket">
         
             <Bracket />
+        </Route>
+        <Route path="/about">
+        
+            <About />
         </Route>
         <Route path="*">
         <Route path="*">
