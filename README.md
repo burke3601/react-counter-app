@@ -2,6 +2,13 @@
 
 This interactive app allows users to choose their favorite dad joke.
 
-Jokes are randomly fetched from https://icanhazdadjoke.com/. After the bracket is set, the user is able to click through the 
+Jokes are randomly fetched from https://icanhazdadjoke.com/. After the bracket is set, the user is able to click through the matchups and crown their dad joke champion.
 
-<img src="./dad-joke-preview.png" max-width="400" max-height="400">
+## Technologies
+
+I used React, JSX, and CSS to complete this app. I will look to add a CSS framework library in a future update.
+
+
+
+
+
