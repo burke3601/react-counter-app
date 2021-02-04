@@ -10,5 +10,7 @@ I used React, JSX, and CSS to complete this app. I will look to add a CSS framew
 
 
 
+## Bracket Sample
 
+<img src="./dad-joke-preview.png" width="400" height="400">
 
